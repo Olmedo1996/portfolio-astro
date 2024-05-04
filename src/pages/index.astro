@@ -1,9 +1,61 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import Badge from '../components/Badge.astro';
+import LinkedInIcon from '../components/icons/LinkedInIcon.astro';
+import SocialPill from '../components/SocialPill.astro';
+import GitHubIcon from '../components/icons/GitHubIcon.astro';
+import BriefCaseIcon from '../components/icons/BriefCaseIcon.astro';
+import MailIcon from '../components/icons/MailIcon.astro';
+import Experience from '../components/Experience.astro';
+import SectionContainer from '../components/SectionContainer.astro';
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout 
+	title="Porfolio de Diego Olmedo - Ingeniero Informático y Desarrollador Web con 4 años de experiencia"
+	description="Desarrollador web Full-Stack con experiencia en la creación de aplicaciones web con tecnologías como HTML, CSS, PHP, Laravel, JavaScript, ReactJS, Next.js, REST API. Con la capacidad de realizar trabajos en equipo, así como también capaz de la autogestión en proyectos independientes."
+>
 	<main>
+		<SectionContainer class="py-44 pb-24">
+			<img 
+				class="rounded-full size-12 opacity-80 mb-4" 
+				src="https://2.gravatar.com/avatar/1cca61a7aa7164d020228b1a5c212f368eb3e0cee611a2276b7b96f230323edd?size=128" 
+				alt="diego"
+			/>
+			<h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-4">
+				Hola, soy Diego Olmedo 
+				<a 
+					href="https://www.linkedin.com/in/diego-olmedo-gimenez/" 
+					target="_blank"
+					rel="noopener"
+					class="flex justify-center items-center">
+					<Badge>Open to work!</Badge>
+				</a>
+			</h1>
+			<h2 class="text-xl opacity-80 text-wrap">
+				<span>+4 años de experiencia.</span> 
+				<span class="opacity-80 text-red-300/90">Ingeniero Informático y Desarrollador web.</span> 
+				<span class="opacity-80" >De Asunción, Paraguay.</span>
+				<span class="opacity-85 ">Experiencia en la creación de aplicaciones web</span>
+			</h2>
+			<ul class="flex flex-row gap-x-4 mt-8">
+				<SocialPill href="https://www.linkedin.com/in/diego-olmedo-gimenez/">
+					<LinkedInIcon class="size-6"/> LinkedIn
+				</SocialPill>
+				<SocialPill href="https://github.com/Olmedo1996">
+					<GitHubIcon class="size-6"/> GitHub
+				</SocialPill>
+				<SocialPill href="https://github.com/Olmedo1996">
+					<MailIcon class="size-6"/> diegoolmedog96@gmail.com
+				</SocialPill>
+			</ul>
+		</SectionContainer>
+		<SectionContainer id="experience">
+			<h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center">
+				<BriefCaseIcon class="size-8"/>
+				Experiencia laboral
+			</h2>
+			<Experience/>
+		</SectionContainer>
 	</main>
 </Layout>
