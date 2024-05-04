@@ -14,6 +14,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - SectionContainer component
 - SocialPill component for Social icons
 - experience into a landing page
+- add Footer component
+
+### Changed
+- mobile adaptation in some areas
+- visual improvements in components
 
 ### Changed
 

@@ -1,6 +1,5 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
 import Badge from '../components/Badge.astro';
 import LinkedInIcon from '../components/icons/LinkedInIcon.astro';
 import SocialPill from '../components/SocialPill.astro';
@@ -15,14 +14,14 @@ import SectionContainer from '../components/SectionContainer.astro';
 	title="Porfolio de Diego Olmedo - Ingeniero Informático y Desarrollador Web con 4 años de experiencia"
 	description="Desarrollador web Full-Stack con experiencia en la creación de aplicaciones web con tecnologías como HTML, CSS, PHP, Laravel, JavaScript, ReactJS, Next.js, REST API. Con la capacidad de realizar trabajos en equipo, así como también capaz de la autogestión en proyectos independientes."
 >
-	<main>
+	<main class="px-4">
 		<SectionContainer class="py-44 pb-24">
 			<img 
 				class="rounded-full size-12 opacity-80 mb-4" 
 				src="https://2.gravatar.com/avatar/1cca61a7aa7164d020228b1a5c212f368eb3e0cee611a2276b7b96f230323edd?size=128" 
 				alt="diego"
 			/>
-			<h1 class="text-white text-5xl font-bold flex flex-row gap-x-4 pb-4">
+			<h1 class="text-white text-2xl md:text-3xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-4 lg:pb-10">
 				Hola, soy Diego Olmedo 
 				<a 
 					href="https://www.linkedin.com/in/diego-olmedo-gimenez/" 
@@ -38,15 +37,15 @@ import SectionContainer from '../components/SectionContainer.astro';
 				<span class="opacity-80" >De Asunción, Paraguay.</span>
 				<span class="opacity-85 ">Experiencia en la creación de aplicaciones web</span>
 			</h2>
-			<ul class="flex flex-row gap-x-4 mt-8">
+			<ul class="flex gap-4 mt-8 flex-wrap ">
 				<SocialPill href="https://www.linkedin.com/in/diego-olmedo-gimenez/">
-					<LinkedInIcon class="size-6"/> LinkedIn
+					<LinkedInIcon class="size-4 lg:size-6"/> LinkedIn
 				</SocialPill>
 				<SocialPill href="https://github.com/Olmedo1996">
-					<GitHubIcon class="size-6"/> GitHub
+					<GitHubIcon class="size-4 lg:size-6"/> GitHub
 				</SocialPill>
-				<SocialPill href="https://github.com/Olmedo1996">
-					<MailIcon class="size-6"/> diegoolmedog96@gmail.com
+				<SocialPill href="mailto:diegoolmedog96@gmail">
+					<MailIcon class="size-4 lg:size-6"/> diegoolmedog96@gmail.com
 				</SocialPill>
 			</ul>
 		</SectionContainer>
