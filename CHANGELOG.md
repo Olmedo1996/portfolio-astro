@@ -7,9 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.1.1] - 2024-05-04
 
+### Added
+
+- new SVG icons for technologies.
+- added projects and experiences
+
 ### Changed
 
-- add improve in footer
+- improved footer
+- enhanced existing SVG icons for technologies
 
 ## [1.0.1] - 2024-05-04
 

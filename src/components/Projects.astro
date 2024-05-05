@@ -4,60 +4,100 @@ import TailwindIcon from '../components/icons/TailwindIcon.astro';
 import ReactIcon from '../components/icons/ReactIcon.astro';
 import ShadcnIcon from '../components/icons/ShadcnIcon.astro';
 import TypeScriptIcon from '../components/icons/TypeScriptIcon.astro';
+import JavascriptIcon from '../components/icons/JavascriptIcon.astro';
+import LeafletIcon from './icons/LeafletIcon.astro';
+import ChakraIcon from './icons/ChakraIcon.astro';
+import AxiosIcon from './icons/AxiosIcon.astro';
+
 
 const TAGS = {
     NEXT: {
         name: "Next.js",
         icon: NextJsIcon,
-        class: "bg-black text-white "
+        class: "bg-black text-white"
     },
     TAILWIND: {
         name: "Tailwind CSS",
         icon: TailwindIcon,
-        class: "bg-[#003159] text-white "
+        class: "bg-[#003159] text-white"
     },
     TYPESCRIPT: {
         name: "TypeScript",
         icon: TypeScriptIcon,
-        class: "bg-[#003159] text-white "
+        class: "bg-[#2D79C7] text-white"
+
     },
     REACT:{
         name: "React",
         icon:  ReactIcon,
-        class: "bg-[#003159] text-white "
+        class: "bg-[#61DBFB] text-black"
+
     },
     SHADCN:{
         name: "Shadcn/UI",
         icon: ShadcnIcon,
         class: "bg-gray-800 text-white "
+
+    },
+    LEAFLET: {
+        name: "LeafletJS",
+        icon: LeafletIcon,
+        class: "bg-[#199900] text-white "
+
+    },
+    JAVASCRIPT: {
+        name: "JavaScript",
+        icon:  JavascriptIcon,
+        class: "bg-[#003159] text-white"
+    },
+    CHAKRA: {
+        name: "Chakra UI",
+        icon:  ChakraIcon,
+        class: "bg-[#46BF89] text-white"
+    },
+    AXIOS: {
+        name: "Axios",
+        icon:  AxiosIcon,
+        class: "bg-[#671DDF] text-white"
     }
 }
 
 const PROJECTS = [
     {
         title: "Sala situacional",
-        description: "Proyecto de tesis para el frontend de la sala situacional para ver gráficos del estado de las enfermedades endémicas del Paraguay.",
-        link: "alertatemprana.vercel.app",
+        description: `
+            Sala situacional para ver
+            gráficos del estado de las enfermedades endémicas del Paraguay.`,
+        link: "https://alertatemprana.vercel.app/",
         image: "/projects/alertatemprana-ligth.webp",
         github: "https://github.com/Olmedo1996/frontend-sala-situacional",
-        tags: [TAGS.NEXT,  TAGS.TAILWIND, TAGS.TYPESCRIPT, TAGS.REACT, TAGS.SHADCN]
+        tags: [TAGS.NEXT,  TAGS.TAILWIND, TAGS.TYPESCRIPT, TAGS.REACT, TAGS.SHADCN, TAGS.LEAFLET]
+    },
+
+    {
+        title: "DigitalBox",
+        description: `Sistema de digitalización y firma de de documentos`,
+        link: "#",
+        image: "/projects/alertatemprana-ligth.webp",
+        github: "https://github.com/Olmedo1996/frontend-sala-situacional",
+        tags: [ TAGS.TYPESCRIPT, TAGS.REACT, TAGS.CHAKRA, TAGS.AXIOS]
     }
 ]
 ---
 
 {
     PROJECTS.map(({description, image, link, github, tags, title}) => (
-        <article>
+        <article class="mb-8">
             <h3 class="text-2xl font-semibold text-yellow-200/90 mb-2">{title}</h3>
             <p class="text-lg mb-4 text-pretty">{description}</p>
-            <a href={link}>Link</a>
-            <a href={github}>Github</a>
+            <a href={link} class="text-lg font-semibold text-yellow-200/80" target="_blank" rel="noopener noreferrer">Link</a>
+            {/* <a href={github}>Github</a> */}
             <ul class="flex gap-x-2 mt-8 mb-8 flex-row">
                 {
                     tags.map(tag => (
                             <li>
-                                <span class={`flex gap-x-2 rounded-full text-xs ${tag.class} py-1 px-3 justify-center items-center`}>
-                                    {<tag.icon class={`size-6`}/>}
+                                <span class={`flex gap-x-2 rounded-md text-xs ${tag.class} py-2 px-3 justify-center items-center`}>
+                                    {<tag.icon class={`size-4`}/>}
                                     <span>{tag.name}</span>
                                 </span>
                             </li>
