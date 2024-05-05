@@ -16,6 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - experience into a landing page
 - add Footer component
 - add icons for some technologies
+- add project section in landing page
 
 ### Changed
 - mobile adaptation in some areas

@@ -8,6 +8,8 @@ import BriefCaseIcon from '../components/icons/BriefCaseIcon.astro';
 import MailIcon from '../components/icons/MailIcon.astro';
 import Experience from '../components/Experience.astro';
 import SectionContainer from '../components/SectionContainer.astro';
+import CodeIcon from '../components/icons/CodeIcon.astro';
+import Projects from '../components/Projects.astro';
 ---
 
 <Layout 
@@ -15,7 +17,7 @@ import SectionContainer from '../components/SectionContainer.astro';
 	description="Desarrollador web Full-Stack con experiencia en la creación de aplicaciones web con tecnologías como HTML, CSS, PHP, Laravel, JavaScript, ReactJS, Next.js, REST API. Con la capacidad de realizar trabajos en equipo, así como también capaz de la autogestión en proyectos independientes."
 >
 	<main class="px-4">
-		<SectionContainer class="py-44 pb-24">
+		<SectionContainer class="py-44 pb-32">
 			<img 
 				class="rounded-full size-12 opacity-80 mb-4" 
 				src="https://2.gravatar.com/avatar/1cca61a7aa7164d020228b1a5c212f368eb3e0cee611a2276b7b96f230323edd?size=128" 
@@ -50,11 +52,18 @@ import SectionContainer from '../components/SectionContainer.astro';
 			</ul>
 		</SectionContainer>
 		<SectionContainer id="experience">
-			<h2 class="text-2xl font-semibold mb-6 flex gap-x-3 items-center">
+			<h2 class="text-3 xl font-semibold mb-6 flex gap-x-3 items-center">
 				<BriefCaseIcon class="size-8"/>
 				Experiencia laboral
 			</h2>
 			<Experience/>
+		</SectionContainer>
+		<SectionContainer id="projects">
+			<h2 class="text-3 xl font-semibold mb-6 flex gap-x-3 items-center">
+				<CodeIcon class="size-8"/>
+				Proyectos
+			</h2>
+			<Projects/>
 		</SectionContainer>
 	</main>
 </Layout>
