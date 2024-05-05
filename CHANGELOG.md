@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - new SVG icons for technologies.
 - added projects and experiences
+- add readme about the porfolio
 
 ### Changed
 
