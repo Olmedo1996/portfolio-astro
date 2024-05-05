@@ -16,6 +16,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - improved footer
 - enhanced existing SVG icons for technologies
+- Refactor project data structure
+- Create a new 'constants' folder to store exported data files
+- Move project data to 'constants/projectsData.astro'
+- Move experience data to 'constants/experienceData.astro'
+- Move navigation data to 'constants/navData.astro'
+- Update Experience, Footer, Projects, and Header components to import data from the new files
 
 ## [1.0.1] - 2024-05-04
 

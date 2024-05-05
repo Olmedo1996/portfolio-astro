@@ -1,40 +1,7 @@
 ---
 import type { Code } from "astro:components"
 import ExperienceItem from "./ExperienceItem.astro"
-
-const EXPERIENCE = [
-    {
-        title: 'SIMGIA SRL, ASUNCIÓN— Desarrollador full stack',
-        description: `Desarrollo webs mediante Rest API para la comunicación entre el backend y  frontend.
-            Uso de tecnologías como Reactjs, Nextjs, Laravel, Flask, Docker, Sencha Ext Js.
-            Uso de herramientas para el control de versiones Git y SVN
-            Herramientas de colaboración: JIRA
-            Testing con herramientas como PHPUnit en Laravel y Jest o Testing Library para ReactJs
-            `,
-        date: 'Actualmente',
-        link: 'https://www.simgia.com/ESP/index.php'
-    },
-    {
-        title: 'BIGBOX — Sistema para digitalización de documentos',
-        description: `
-            Realice un proyecto con un equipo de tres personas incluyéndome, 
-            para diseñar, desarrollar e implementar DigitalBox, 
-            un sistema de digitalización y firma de documentos, presentado e implementado en la empresa BigBox SRL.
-            `,
-        date: 'FEBRERO 2023 - MARZO 2023',
-        // link: undefined
-    },
-    {
-        title: 'Instituto Regional de Investigación en Salud - UNCA',
-        description: `
-            Desarrollo de plataforma web  con Wordpress
-            Limpieza de datos, carga o análisis en herramientas excel o herramientas para el desarrollo de formularios
-            Mantenimiento del sitio 
-            `,
-        date: 'AGOSTO DE 2018 - DICIEMBRE DE 2018',
-        // link: undefined
-    },
-]
+import { EXPERIENCE } from "../constants/experienceData.astro"
 ---
 <ol class="relative border-s border-gray-200 ml-3">        
     {
