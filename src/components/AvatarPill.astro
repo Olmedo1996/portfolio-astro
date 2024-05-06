@@ -1,0 +1,20 @@
+---
+interface Props {
+    tags: {
+        name: string,
+        icon:  any,
+        class: string
+    }[]
+}
+
+const { tags: TAGS } = Astro.props
+---
+<div class="flex -space-x-4 rtl:space-x-reverse">
+    {
+        TAGS.map(tag => (
+            <span class={`flex gap-x-2 rounded-full text-xs ${tag.class} p-2 justify-center items-center`}>
+                {<tag.icon class={`size-4`}/>}
+            </span>
+        ))
+    }
+</div>
