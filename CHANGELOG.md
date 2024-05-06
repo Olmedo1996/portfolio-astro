@@ -11,6 +11,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - new components for projects, ProjectItems and ProjectCard
 
+### Changed
+
+- refactor projects component
+
 ### Fixed
 
 - changelog version date

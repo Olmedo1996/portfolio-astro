@@ -1,28 +1,28 @@
 ---
 import { PROJECTS } from '../constants/projectsData.astro';
+import ProjectItems from './ProjectItems.astro';
 ---
 
-{
-    PROJECTS.map(({description, image, link, github, tags, title}) => (
-        <article class="mb-8">
-            <h3 class="text-2xl font-semibold text-yellow-200/90 mb-2">{title}</h3>
-            <p class="text-lg mb-4 text-pretty">{description}</p>
-            <a href={link} class="text-lg font-semibold text-yellow-200/80" target="_blank" rel="noopener noreferrer">Link</a>
-            {/* <a href={github}>Github</a> */}
-            <ul class="flex gap-x-2 mt-8 mb-8 flex-row">
-                {
-                    tags.map(tag => (
-                            <li>
-                                <span class={`flex gap-x-2 rounded-md text-xs ${tag.class} py-2 px-3 justify-center items-center`}>
-                                    {<tag.icon class={`size-4`}/>}
-                                    <span>{tag.name}</span>
-                                </span>
-                            </li>
-                        )
-                    )
-                }
-            </ul>
-            <img class="rounded shadow-2xl shadow-white/20" src={image} alt={title} />
-        </article>
-    ))
-}
+<div class={`
+    flex flex-nowrap overflow-x-scroll items-start scroll-smooth
+    hide-scroll-bar
+    rounded-lg  
+    bg-gray-800/20 backdrop-blur-lg shadow
+    m-4 w-full gap-6 py-6 px-4
+    `}>
+    {
+        PROJECTS.map( data => (
+            <ProjectItems {...data}/> 
+        ))
+    }
+</div>
+
+<style>
+    .hide-scroll-bar {
+      /* -ms-overflow-style: none; */
+      /* scrollbar-width: none; */
+    }
+    .hide-scroll-bar::-webkit-scrollbar {
+      /* display: none; */
+    }
+</style>
