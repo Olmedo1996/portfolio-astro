@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - add a page for cv or resume
+- add a cv icon
 
 ## [1.2.1] - 2024-05-06
 
