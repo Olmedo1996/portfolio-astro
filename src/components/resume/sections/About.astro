@@ -1,0 +1,14 @@
+---
+import SectionResume from "@/components/resume/SectionResume.astro"
+
+import { basics } from "@/cv"
+
+const {summary} = basics
+---
+
+
+<SectionResume title="Sobre mi">
+    <p>
+        {summary}
+    </p>
+</SectionResume>

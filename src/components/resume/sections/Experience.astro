@@ -1,0 +1,70 @@
+---
+import SectionResume from "@/components/resume/SectionResume.astro"
+import { work } from "@/cv"
+---
+<SectionResume title="Experiencia">
+    <ul>
+        {
+            work.map(({name, startDate, endDate, position,highlights, url,summary}) => {
+
+                const startYear = new Date(startDate).getFullYear()
+                const startMonth = new Date(startDate).toLocaleString('default', { month: 'long' })
+                const endYear = endDate!=null ? new Date(endDate).getFullYear() : "Actualmente"
+                const endMonth = endDate!=null ? new Date(endDate).toLocaleString('default', { month: 'long' }) : ""
+                const years = `${startMonth} ${startYear} - ${endMonth} ${endYear}`
+
+                return (
+                    <article>
+                        <header>
+                            <div>
+                                <h3>{name}</h3>
+                                <time>{years}</time>
+                            </div>
+                            <h4>{position}</h4>
+                        </header>
+                        <footer>
+                            <p>{summary}</p>
+                        </footer>
+                        {/* <li>
+                            <a href={url} target="_blank" rel="noreferrer">Ver proyecto</a> 
+                        </li> */}
+                    </article>
+                )
+            })
+        }
+    </ul>
+</SectionResume>
+
+
+<style>
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    article h3 {
+        color: #222;
+        font-weight: 500;
+
+    }
+
+    article h4 {
+        font-size: .9rem;
+        color: #333;
+        font-weight: 400;
+    }
+
+    header div{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 4px;
+    }
+
+    time{
+        font-size: 0.8rem;
+        color: #555;
+        font-weight: 700;
+    }
+</style>

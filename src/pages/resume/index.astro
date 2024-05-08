@@ -1,0 +1,37 @@
+---
+import LayoutResume from "@/layouts/resume/LayoutResume.astro";
+
+import About from "@/components/resume/sections/About.astro";
+import Education from "@/components/resume/sections/Education.astro";
+import Experience from "@/components/resume/sections/Experience.astro";
+import Hero from "@/components/resume/sections/Hero.astro";
+import Projects from "@/components/resume/sections/Projects.astro";
+import Skills from "@/components/resume/sections/Skills.astro";
+
+import KeyboardManager from "@/components/resume/KeyboardManager.astro";
+
+---
+
+<LayoutResume
+    title="Porfolio de Diego Olmedo - Ingeniero Informático y Desarrollador Web con 4 años de experiencia"
+	description="Desarrollador web Full-Stack con experiencia en la creación de aplicaciones web con tecnologías como HTML, CSS, PHP, Laravel, JavaScript, ReactJS, Next.js, REST API. Con la capacidad de realizar trabajos en equipo, así como también capaz de la autogestión en proyectos independientes."
+>
+    <main>
+        <Hero />
+        <About />
+        <Experience/>
+        <Education />
+        <Projects />
+        <Skills />
+    </main>
+
+    <KeyboardManager />
+</LayoutResume>
+
+<style>
+    main {
+        padding: 4rem;
+        margin: auto;
+        width: 100%;
+    }
+</style>

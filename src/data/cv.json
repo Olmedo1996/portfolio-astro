@@ -1,0 +1,257 @@
+{
+    "basics": {
+        "name": "Diego Martin Olmedo Giménez",
+        "label": "Ingeniero en sistemas | Full stack Developer con más de 3 años de experiencia en desarrollo web",
+        "image": "https://2.gravatar.com/avatar/1cca61a7aa7164d020228b1a5c212f368eb3e0cee611a2276b7b96f230323edd?size=128",
+        "email": "diegoolmedog96@gmail.com",
+        "phone": "+595 975 266543",
+        "url": "https://diego-olmedo.netlify.app/",
+        "summary": "Desarrollador web Full-Stack con +3 de experiencia en la creación de aplicaciones web con tecnologías como HTML, CSS, PHP, Laravel, JavaScript, ReactJS, Next.js, REST API. Con la habilidad para realizar trabajos en equipo, así como también gestionar proyectos de manera autónoma.",
+        "location": {
+            "address": "San Antonio 964",
+            "postalCode": "",
+            "city": "Asunción",
+            "countryCode": "PY",
+            "region": "Paraguay"
+        },
+        "profiles": [
+            {
+                "network": "LinkedIn",
+                "username": "Diego Olmedo",
+                "url": "https://www.linkedin.com/in/diego-olmedo-gimenez/"
+            },
+            {
+                "network": "GitHub",
+                "username": "Olmedo1996",
+                "url": "https://github.com/Olmedo1996"
+            }
+        ]
+    },
+    "work": [
+        {
+            "name": "SIMGIA SRL",
+            "position": "Full Stack Developer",
+            "url": "https://www.simgia.com",
+            "startDate": "2021-01-07",
+            "endDate": null,
+            "summary": "Desarrollo webs mediante Rest API para la comunicación entre el backend y frontend. Uso de tecnologías como Reactjs, Nextjs, Laravel, Flask, Docker, OCR con Python, Sencha Ext Js. Uso de herramientas para el control de versiones Git y SVN Herramientas de colaboración: JIRA y Trello. Testing con herramientas como PHPUnit en Laravel y Jest o Testing Library para ReactJs",
+            "highlights": []
+        },
+        {
+            "name": "Instituto Regional de Investigación en Salud - UNCA,",
+            "position": "Pasante",
+            "url": "",
+            "startDate": "2018-08-01",
+            "endDate": "2018-12-15",
+            "summary": "Desarrollo de plataforma web  con Wordpress. Limpieza de datos, carga o análisis en herramientas excel o herramientas para el desarrollo de formularios, Mantenimiento del sitio",
+            "highlights": []
+        }
+    ],
+    "volunteer": [
+        {
+            "organization": "Grupo Scout Tte. Juan Angel Benítez",
+            "position": "Dirigente",
+            "url": "",
+            "startDate": "2016-01-01",
+            "endDate": "2020-01-01",
+            "summary": "Estuve a cargo y como asistente de la rama Caminantes y Rover.",
+            "highlights": []
+        }
+    ],
+    "education": [
+        {
+            "institution": "Universidad Nacional de Caaguazú - Facultad de Ciencias y Tecnologías.",
+            "url": "http://www.fctunca.edu.py/",
+            "area": "Ingeniería en Sistemas Informáticos",
+            "studyType": "Licenciatura",
+            "startDate": "2015-01-01",
+            "endDate": "2024-06-28",
+            "score": "4.3",
+            "courses": []
+        },
+        {
+            "institution": "Universidad Nacional de Asunción - Facultad Politécnica.",
+            "url": "https://www.pol.una.py/",
+            "area": "Diplomado en introducción de análisis de datos de la salud",
+            "studyType": "Diplomado",
+            "startDate": "2022-08-01",
+            "endDate": "2022-12-01",
+            "score": "80",
+            "courses": ["Análisis de datos de la salud", "R", "Limpieza de datos", "SQL"]
+        },
+        {
+            "institution": "Universidad Nacional de Asunción - Facultad Politécnica.",
+            "url": "https://www.pol.una.py/",
+            "area": "Diplomado en Machine Learning",
+            "studyType": "Diplomado",
+            "startDate": "2022-08-01",
+            "endDate": "2022-12-01",
+            "score": "80",
+            "courses": ["Machine Learning", "Python", "Limpieza de datos", "Google Colab", "TensorFlow", "Scikit-learn", "Anaconda", "Jupyter Notebook"]
+        }
+        
+    ],
+    "awards": [
+        {
+            "title": "Award",
+            "date": "2014-11-01",
+            "awarder": "Company",
+            "summary": "There is no spoon."
+        }
+    ],
+    "certificates": [
+        {
+            "name": "DISEÑO WEB JAVA SCRIPT SISTEMA E-LEARNING",
+            "date": "2020-09-02",
+            "issuer": "SNPP",
+            "url": "https://www.paraguay.gov.py/validar?constancia_nro=3384853&codigo_seguridad=f3e132d1"
+        },
+        {
+            "name": "Aprende SQL desde cero: ¡Curso con mas de 50 ejercicios! ",
+            "date": "2022-08-15",
+            "issuer": "SNPP",
+            "url": "https://www.udemy.com/certificate/UC-e7ce9d2f-0af7-4cc6-8069-3cda0e5fc031/"
+        }
+    ],
+    "publications": [
+        {
+            "name": "Publication",
+            "publisher": "Company",
+            "releaseDate": "2014-10-01",
+            "url": "https://publication.com",
+            "summary": "Description…"
+        }
+    ],
+    "skills": [
+        {
+            "name": "Web Development",
+            "level": "Master",
+            "keywords": ["Desarrollo Web", "Frontend"]
+        },
+        {
+            "name": "Data Science",
+            "level": "Basic",
+            "keywords": ["Python", "R", "Machine Learning", "Data Science"]
+        },
+        {
+            "name": "JavaScript",
+            "level": "Avanzado",
+            "keywords": ["Desarrollo Web", "Frontend", "Backend", "Fullstack"]
+        },
+        {
+            "name": "Tailwind",
+            "level": "Basic",
+            "keywords": ["Desarrollo Web", "Frontend", "CSS Framework", "Diseño Responsive"]
+        },
+        {
+            "name": "TypeScript",
+            "level": "Avanzado",
+            "keywords": ["Desarrollo Web", "Frontend", "Backend", "JavaScript Superset"]
+        },
+        {
+            "name": "Node",
+            "level": "Basic",
+            "keywords": ["Desarrollo Web", "Backend", "JavaScript", "Servidor"]
+        },
+        {
+            "name": "MySQL",
+            "level": "Avanzado",
+            "keywords": ["Bases de Datos", "SQL", "Almacenamiento de Datos", "Backend"]
+        },
+        {
+            "name": "PostgreSQL",
+            "level": "Basic",
+            "keywords": ["Bases de Datos", "SQL", "Almacenamiento de Datos", "Backend"]
+        },
+        {
+            "name": "Git",
+            "level": "Avanzado",
+            "keywords": ["Control de Versiones", "Colaboración", "Código Fuente"]
+        },
+        {
+            "name": "GitHub",
+            "level": "Avanzado",
+            "keywords": ["Control de Versiones", "Colaboración", "Código Fuente", "Git"]
+        },
+        {
+            "name": "GitLab",
+            "level": "Avanzado",
+            "keywords": ["Control de Versiones", "Colaboración", "Código Fuente", "Git"]
+        },
+        {
+            "name": "Next.js",
+            "level": "Avanzado",
+            "keywords": ["Desarrollo Web", "Frontend", "React Framework", "SSR", "Static Generation"]
+        },
+        {
+            "name": "React",
+            "level": "Avanzado",
+            "keywords": ["Desarrollo Web", "Frontend", "JavaScript Library", "UI"]
+        },
+        {
+            "name": "Laravel",
+            "level": "Avanzado",
+            "keywords": ["Desarrollo Web", "Backend", "PHP Framework", "API", "REST API"]
+        },
+        {
+            "name": "Python",
+            "level": "Basic",
+            "keywords": ["Desarrollo Web", "Backend", "Python", "API", "REST API"]
+        },
+        {
+            "name": "FastAPI",
+            "level": "Basic",
+            "keywords": ["Desarrollo Web", "Backend", "Python", "API", "REST API"]
+        }
+    ],
+    "languages": [
+        {
+            "language": "English",
+            "fluency": "Basic speaker"
+        },
+        {
+            "language": "Spanish",
+            "fluency": "Native speaker"
+        },
+        {
+            "language": "Guarani",
+            "fluency": "Native speaker"
+        }
+    ],
+    "interests": [
+        {
+            "name": "Wildlife",
+            "keywords": ["Ferrets", "Unicorns"]
+        }
+    ],
+    "references": [
+        {
+            "name": "Javier Cardozo",
+            "reference": "CEO - SIMGIA.SRL"
+        },
+        {
+            "name": "José González von Schmeling",
+            "reference": "Software Developer/Women Techmakers Ambassador"
+        }
+    ],
+    "projects": [
+        {
+            "name": "Sala situacional",
+            "startDate": "2024-01-01",
+            "endDate": "2024-05-01",
+            "description": "Sistema para el control de casos de dengue del Paraguay presentando gráficas del estado de las enfermedades endémicas, como la incidencia, la tasa de picadura y predicciones. Se manejan casos de dengue de 2009 a 2013.",
+            "highlights": ["Next.Js", "TailwindCSS", "TypeScript", "React", "Axios", "Leaflet", "Laravel", "FastApi", "Machine Learning", "MySQL"],
+            "url": "https://alertatemprana.vercel.app/",
+            "isActive": false
+        },
+        {
+            "name": "DigitalBox",
+            "startDate": "2022-12-22",
+            "endDate": "2023-04-28",
+            "description": "Sistema de digitalización y firma certificada de documentos, presentado e implementado en la empresa BigBox SRL.",
+            "highlights": ["Axios", "Laravel", "ReactJS", "PostgreSQL", "ChakraUI", "TypeScript", "Vite"],
+            "url": null,
+            "isActive": true
+        }
+    ]
+}

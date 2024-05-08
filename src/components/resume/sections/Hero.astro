@@ -1,0 +1,179 @@
+---
+import { basics } from "@/cv"
+import SectionResume from "@/components/resume/SectionResume.astro"
+import Mail from "@/components/icons/resume/Mail.astro"
+import Phone from "@/components/icons/resume/Phone.astro"
+
+import LinkedIn from "@/components/icons/resume/LinkedIn.astro"
+import X from "@/components/icons/resume/X.astro"
+import GitHub from "@/components/icons/resume/GitHub.astro"
+import WorldMap from "@/components/icons/resume/WorldMap.astro"
+GitHub
+X
+LinkedIn
+
+const { name, label, image, email, location, phone, profiles, url } = basics
+const {address, city, region, countryCode, postalCode} = location
+
+
+const SOLCIAL_ICONS: Record<string, any> = {
+    GitHub,
+    X,
+    LinkedIn,
+}
+
+const linkedInfo = profiles.find(profile => profile.network === "LinkedIn")
+const linkedUrl = linkedInfo ? linkedInfo.url : ""
+const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
+---
+<SectionResume>
+    <div class="content">
+        <div class="info">
+            <h1>{name}</h1>
+            <h2>{label}</h2>
+            <span>
+                <WorldMap/> {city} - {region}
+            </span>
+            <footer class="print">
+                {printInfo}
+            </footer>
+            <footer class="no-print">
+                {
+                    email && (
+                        <a 
+                            href={`mailto:${email}`} 
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            title={`Enviar un correo electrónico a ${name} al ${email}`}
+                        >
+                            {<Mail/>}
+                        </a>
+                    )
+                }
+                {
+                    phone && (
+                        <a 
+                            href={`tel:${phone}`} 
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            title={`llamar por telefono a ${name} al ${phone}`}
+                        >
+                            {<Phone/>}
+                        </a>
+                    )
+                }
+                {
+                    profiles.map(({ network, url, username })=> {
+                        const Icon = SOLCIAL_ICONS[network]
+
+                        return (
+                            <a
+                                href={url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                title={`Ir a ${name} en ${network}`}
+                            >
+                                <Icon/>
+                            </a>
+                        )
+                    })
+                }
+            </footer>
+        </div>
+        <!-- <figure> -->
+            <img src={image} alt={name}/>
+        <!-- </figure> -->
+    </div>
+</SectionResume>
+
+
+<style>
+    .content{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    h2{
+        color: #444;
+        font-weight: 500;
+        font-size: 1rem;
+        text-wrap: balance;
+    }
+
+    img{
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        width: 128px;
+        border-radius: 6px;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-self: space-between;
+        gap: 1rem;
+    }
+
+    span{
+        color: #666;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: .25rem;
+        font-size: 0.85rem;
+        letter-spacing: -0.05rem;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding-right: 32px;
+    }
+
+    footer{
+        font-size: 0.65rem;
+        display: flex;
+        gap: 4px;
+        margin-top: 8px;
+    }
+
+    footer a{
+        color: #777;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #eee;
+        padding: 4px;
+        width: 32px;
+        height: 32px;
+        border-radius: 6px;
+        transition:  all .3s ease;
+    }
+
+    footer a:hover{
+        background-color: #eee;
+        border: 1px solid #ddd;
+    }
+
+    .print{
+        display: none;
+        margin-top: 0px !important;
+    }
+
+    @media print {
+        .print{
+            display: block;
+        }
+        .no-print{
+            display: none;
+        }
+    }
+
+</style>

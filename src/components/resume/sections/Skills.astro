@@ -1,0 +1,47 @@
+---
+import SectionResume from "@/components/resume/SectionResume.astro"
+import {skills} from "@/cv"
+
+---
+<SectionResume title="Skills">
+    <ul>
+        {
+            skills.map(({name}) => (
+                <li>
+                    <span>{name}</span>
+                </li>
+            ))
+        }
+    </ul>
+</SectionResume>
+
+
+<style>
+    ul{
+        display: inline-flex;
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+    li{
+        border-radius: 6px;
+        background: #4d4d4d;
+        color: #eee;
+        font-size: 0.8rem;
+        font-weight: 500;
+        padding: 0.2rem 0.6rem;
+    }
+    li:hover {
+        background: #747474;
+    }
+    
+
+    @media print {
+        li{
+            border-radius: 6px;
+            color: #3f3f3f;
+            font-size: 0.8rem;
+            font-weight: 500;
+            padding: 0.2rem 0.6rem;
+        }
+    }
+</style>
