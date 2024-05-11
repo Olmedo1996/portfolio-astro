@@ -1,3 +1,4 @@
+<span id="readme-top"></span>
 
 ![Logo](./public/portfolio.webp)
 
@@ -14,14 +15,22 @@ Estructura de carpetas del proyecto:
 ├── public/
 │   └── favicon.svg
 ├── src/
-│   ├── icons/
-│   │
 │   ├── components/
-│   │   
-│   ├── layouts/
-│   │  
-│   ├── pages/
-│   └    
+│   │   ├── icons/
+│   │   └── resume/
+│   │       ├── sections/
+│   │       ├── KeyboardManager.astro
+│   │       └── SectionResume.astro
+│   ├── data/
+│   │   ├── cv.json
+│   │   ├── navData.astro
+│   │   ├── projectsData.astro
+│   │   └── tags.astro
+│   ├── layouts/ 
+│   └── pages/
+│       ├── resume/
+│       │   └──index.astro
+│       └── index.astro
 └── package.json
 ```
 
