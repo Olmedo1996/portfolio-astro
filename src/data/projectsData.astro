@@ -1,85 +1,26 @@
 ---
-import NextJsIcon from '../components/icons/NextJsIcon.astro';
-import TailwindIcon from '../components/icons/TailwindIcon.astro';
-import ReactIcon from '../components/icons/ReactIcon.astro';
-import ShadcnIcon from '../components/icons/ShadcnIcon.astro';
-import TypeScriptIcon from '../components/icons/TypeScriptIcon.astro';
-import JavascriptIcon from '../components/icons/JavascriptIcon.astro';
-import LeafletIcon from '../components/icons/LeafletIcon.astro';
-import ChakraIcon from '../components/icons/ChakraIcon.astro';
-import AxiosIcon from '../components/icons/AxiosIcon.astro';
+import { projects } from '@/cv';
+import { TAGS } from '@/data/tags.astro';
 
-export const TAGS = {
-    NEXT: {
-        name: "Next.js",
-        icon: NextJsIcon,
-        class: "bg-black text-white"
-    },
-    TAILWIND: {
-        name: "Tailwind CSS",
-        icon: TailwindIcon,
-        class: "bg-[#003159] text-white"
-    },
-    TYPESCRIPT: {
-        name: "TypeScript",
-        icon: TypeScriptIcon,
-        class: "bg-[#2D79C7] text-white"
+export const PROJECTS = projects.map(project => {
+    const { name, description, highlights, startDate, endDate, url, isActive, image} = project
 
-    },
-    REACT:{
-        name: "React",
-        icon:  ReactIcon,
-        class: "bg-[#61DBFB] text-black"
+    const tags = TAGS.map(tag => {
+        if(highlights.includes(tag.name)) {
+            return {
+                name: tag.name,
+                icon: tag.icon,
+                class: tag.class
+            }
+        }
+    }) 
 
-    },
-    SHADCN:{
-        name: "Shadcn/UI",
-        icon: ShadcnIcon,
-        class: "bg-gray-800 text-white "
-
-    },
-    LEAFLET: {
-        name: "LeafletJS",
-        icon: LeafletIcon,
-        class: "bg-[#199900] text-white "
-
-    },
-    JAVASCRIPT: {
-        name: "JavaScript",
-        icon:  JavascriptIcon,
-        class: "bg-[#003159] text-white"
-    },
-    CHAKRA: {
-        name: "Chakra UI",
-        icon:  ChakraIcon,
-        class: "bg-[#46BF89] text-white"
-    },
-    AXIOS: {
-        name: "Axios",
-        icon:  AxiosIcon,
-        class: "bg-[#671DDF] text-white"
+    return {
+        title: name,
+        description,
+        link: url,
+        tags: tags.filter(tag => Boolean(tag)),
+        image
     }
-}
-
-export const PROJECTS = [
-    {
-        title: "Sala situacional",
-        description: `
-            Sala situacional para ver
-            gráficos del estado de las enfermedades endémicas del Paraguay.`,
-        link: "https://alertatemprana.vercel.app/",
-        image: "/projects/alertatemprana-ligth.webp",
-        github: "https://github.com/Olmedo1996/frontend-sala-situacional",
-        tags: [TAGS.NEXT,  TAGS.TAILWIND, TAGS.TYPESCRIPT, TAGS.REACT, TAGS.SHADCN, TAGS.LEAFLET]
-    },
-
-    {
-        title: "DigitalBox",
-        description: `Sistema de digitalización y firma certificada de documentos, presentado e implementado en la empresa BigBox SRL.`,
-        link: "#",
-        image: "/projects/digitalbox.webp",
-        github: "https://github.com/Olmedo1996/frontend-sala-situacional",
-        tags: [ TAGS.TYPESCRIPT, TAGS.REACT, TAGS.CHAKRA, TAGS.AXIOS]
-    }
-]
+})
 ---

@@ -1,14 +1,28 @@
 ---
-import type { Code } from "astro:components"
 import ExperienceItem from "./ExperienceItem.astro"
-import { EXPERIENCE } from "@/data/experienceData.astro"
+import { work } from '@/cv'
+
 ---
 <ol class="relative border-s border-gray-200 ml-3">        
     {
-        EXPERIENCE.map(experience => (
-            <li class="mb-10 ms-4">
-                <ExperienceItem {...experience} />
-            </li>
-        ))
+        work.map( ({name, startDate, endDate, position,highlights, url,summary}) => {
+            const startYear = new Date(startDate).getFullYear()
+            const startMonth = new Date(startDate).toLocaleString('default', { month: 'long' })
+            const endYear = endDate!=null ? new Date(endDate).getFullYear() : "Actualmente"
+            const endMonth = endDate!=null ? new Date(endDate).toLocaleString('default', { month: 'long' }) : ""
+            const date = `${startMonth} ${startYear} - ${endMonth} ${endYear}`
+
+
+            return (
+                <li class="mb-10 ms-4">
+                    <ExperienceItem  
+                        title={name} 
+                        date={date}
+                        description={summary}
+                        link={url}
+                    />
+                </li>
+            )
+        })
     }          
 </ol>

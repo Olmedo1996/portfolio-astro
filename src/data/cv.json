@@ -38,6 +38,15 @@
             "highlights": []
         },
         {
+            "name": "BIGBOX — Sistema para digitalización certificada de documentos",
+            "position": "Pasante",
+            "url": "",
+            "startDate": "2023-02-01",
+            "endDate": "2023-05-01",
+            "summary": "Realice un proyecto con un equipo de tres personas incluyéndome, para diseñar, desarrollar e implementar DigitalBox, un sistema de digitalización y firma de documentos, presentado e implementado en la empresa BigBox SRL",
+            "highlights": []
+        },
+        {
             "name": "Instituto Regional de Investigación en Salud - UNCA,",
             "position": "Pasante",
             "url": "",
@@ -240,8 +249,9 @@
             "startDate": "2024-01-01",
             "endDate": "2024-05-01",
             "description": "Sistema para el control de casos de dengue del Paraguay presentando gráficas del estado de las enfermedades endémicas, como la incidencia, la tasa de picadura y predicciones. Se manejan casos de dengue de 2009 a 2013.",
-            "highlights": ["Next.Js", "TailwindCSS", "TypeScript", "React", "Axios", "Leaflet", "Laravel", "FastApi", "Machine Learning", "MySQL"],
+            "highlights": ["Next.Js", "TailwindCSS", "TypeScript", "ReactJS", "Axios", "Leaflet", "Laravel", "FastApi", "Machine Learning", "MySQL", "Shadcn/UI", "LeafletJS"],
             "url": "https://alertatemprana.vercel.app/",
+            "image": "/projects/alertatemprana-ligth.webp",
             "isActive": false
         },
         {
@@ -251,6 +261,7 @@
             "description": "Sistema de digitalización y firma certificada de documentos, presentado e implementado en la empresa BigBox SRL.",
             "highlights": ["Axios", "Laravel", "ReactJS", "PostgreSQL", "ChakraUI", "TypeScript", "Vite"],
             "url": null,
+            "image": "/projects/digitalbox.webp",
             "isActive": true
         }
     ]

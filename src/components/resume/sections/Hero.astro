@@ -8,13 +8,9 @@ import LinkedIn from "@/components/icons/resume/LinkedIn.astro"
 import X from "@/components/icons/resume/X.astro"
 import GitHub from "@/components/icons/resume/GitHub.astro"
 import WorldMap from "@/components/icons/resume/WorldMap.astro"
-GitHub
-X
-LinkedIn
 
 const { name, label, image, email, location, phone, profiles, url } = basics
-const {address, city, region, countryCode, postalCode} = location
-
+const { city, region } = location
 
 const SOLCIAL_ICONS: Record<string, any> = {
     GitHub,
