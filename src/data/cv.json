@@ -263,6 +263,26 @@
             "url": null,
             "image": "/projects/digitalbox.webp",
             "isActive": true
+        },
+        {
+            "name": "RUEM",
+            "startDate": "2021-06-01",
+            "endDate": "2021-07-15",
+            "description": "Registro Único de Emprendedores y MIPYMES.",
+            "highlights": ["Axios", "Laravel",  "MySQL", "JavaScript", "Redux"],
+            "url": "https://ruem.conacyt.gov.py/",
+            "image": "/projects/ruem-login.webp",
+            "isActive": true
+        },
+        {
+            "name": "Beneficiarios",
+            "startDate": "2021-06-01",
+            "endDate": "2021-07-15",
+            "description": "Sistema de beneficiarios de CONACYT para el registro de beneficiarios PRONII, RUEM y Evaluadores .",
+            "highlights": ["ExtJS", "Laravel",  "MySQL", "JavaScript"],
+            "url": "https://beneficiarios.conacyt.gov.py/",
+            "image": "/projects/beneficiarios-login.webp",
+            "isActive": true
         }
     ]
 }

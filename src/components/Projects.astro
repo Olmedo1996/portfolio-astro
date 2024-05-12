@@ -25,4 +25,41 @@ import ProjectItems from './ProjectItems.astro';
     .hide-scroll-bar::-webkit-scrollbar {
       /* display: none; */
     }
+
+    /* Firefox (uncomment to work in Firefox, although other properties will not work!)  */
+  /** {
+    scrollbar-width: thin;
+    scrollbar-color: #737373 #DFE9EB;
+  }*/
+
+  /* Chrome, Edge and Safari */
+  *::-webkit-scrollbar {
+    height: 10px;
+    width: 10px;
+  }
+  *::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: transparent;
+  }
+
+  *::-webkit-scrollbar-track:hover {
+    background-color: transparent;
+  }
+
+  *::-webkit-scrollbar-track:active {
+    background-color: transparent;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    border-radius: 19px;
+    background-color: #737373;
+  }
+
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: #525252;
+  }
+
+  *::-webkit-scrollbar-thumb:active {
+    background-color: #787878;
+  }
 </style>
