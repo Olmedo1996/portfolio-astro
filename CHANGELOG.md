@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.4.1] - 2024-05-07
 
+### Added
+
+- add a noise background component
+
 ### Changed
 
 - retrieve experience and project data from JSON file; updated data retrieval method to fetch experience information from a JSON file named 'cv', enhancing maintainability and readability of the code.
