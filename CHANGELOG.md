@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - retrieve experience and project data from JSON file; updated data retrieval method to fetch experience information from a JSON file named 'cv', enhancing maintainability and readability of the code.
 - update readme file
+- improve header
 
 ## [1.3.1] - 2024-05-07
 

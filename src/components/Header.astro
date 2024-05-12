@@ -1,11 +1,14 @@
 ---
 import { NAV_DATA } from "@/data/navData.astro";
+import HomeIcon from "./icons/HomeIcon.astro";
 ---
-<header class="flex justify-center items-center py-5 w-full">
-    <nav class="flex flex-row gap-x-10">
+<header class="flex justify-center py-5 w-full sticky top-0 z-50">
+    <nav class="flex flex-row items-center backdrop-blur-sm bg-slate-900/90 rounded-full text-sm md:text-base shadow-lg h-10 overflow-hidden">
         {
             NAV_DATA.map(({name, link}) => (
-                <a href={link}>{name}</a>
+                <a href={link} class="flex items-center justify-center  hover:bg-slate-800/90 px-4 h-full">
+                    {name !== 'Home' ? name : <HomeIcon class="size-6"/>}
+                </a>
             ))
         }
     </nav>
