@@ -1,13 +1,20 @@
 ---
 import { NAV_DATA } from "@/data/navData.astro";
 import HomeIcon from "./icons/HomeIcon.astro";
+import ExternalIcon from "./icons/ExternalIcon.astro";
 ---
 <header class="flex justify-center py-5 w-full sticky top-0 z-50">
     <nav class="flex flex-row items-center backdrop-blur-sm bg-slate-900/90 rounded-full text-sm md:text-base shadow-lg h-10 overflow-hidden">
         {
             NAV_DATA.map(({name, link}) => (
-                <a href={link} class="flex items-center justify-center  hover:bg-slate-800/90 px-4 h-full">
-                    {name !== 'Home' ? name : <HomeIcon class="size-6"/>}
+                <a href={link} target={name==='Repo'?'_blank':null}  class="flex items-center justify-center  hover:bg-slate-800/90 px-4 h-full">
+                    {
+                        name !== 'Repo' && name !== 'Home' 
+                            ? name 
+                            : name === 'Home' 
+                                ? <HomeIcon class="size-4 lg:size-6"/>
+                                : <ExternalIcon class="size-3 lg:size-5"/>
+                    }
                 </a>
             ))
         }
